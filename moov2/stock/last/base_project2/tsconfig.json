@@ -1,0 +1,51 @@
+/*{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@src2/*": ["src2/*"],
+    
+      "@search/*": ["src2/search/*"]
+    }
+  },
+  "include": ["src", "src2", "../src2/search"],
+  "exclude": ["node_modules", "dist"]
+}
+*/
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@search/*": ["src2/search/*"],
+      "@auth2/*": ["src2/search/auth/*"],
+      "@csv/*": ["src2/search/csv/*"],
+      "@tgz/*": ["src2/search/tgz/*"]
+    }
+  },
+  "include": ["src", "src2"],
+  "exclude": ["node_modules", "dist"]
+}

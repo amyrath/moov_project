@@ -1,0 +1,9 @@
+    <%- include("./partials/header", {title: "Page d'acceuil"}) %>
+
+  <% if(locals.connected) { %>
+    <h1> Bienvenue <%= locals.user.username %></h1>
+        <% } else { %>
+            <h1> Bienvenue cher nouveau membre </h1>
+    <% } %>
+
+    <%- include("./partials/footer") %>
