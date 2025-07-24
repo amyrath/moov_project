@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"],
+
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@search/*": ["src2/search/*"],
+      "@auth2/*": ["src2/auth/*"],
+      "@csv/*": ["src2/search/csv/*"],
+      "@tgz/*": ["src2/search/tgz/*"]
+    }
+  }
+
+}

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@nestjs/common": "^11.1.5",
+    "@nestjs/testing": "^11.1.5"
+  }
+}
