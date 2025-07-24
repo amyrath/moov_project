@@ -1,0 +1,55 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Tgz = void 0;
+const typeorm_1 = require("typeorm");
+let Tgz = class Tgz {
+    id;
+    source;
+    type_cdr;
+    year;
+    month;
+    file;
+    extension;
+};
+exports.Tgz = Tgz;
+__decorate([
+    (0, typeorm_1.PrimaryGeneratedColumn)(),
+    __metadata("design:type", Number)
+], Tgz.prototype, "id", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ name: 'file' }),
+    __metadata("design:type", String)
+], Tgz.prototype, "source", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ name: 'type_cdr' }),
+    __metadata("design:type", String)
+], Tgz.prototype, "type_cdr", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ name: 'year' }),
+    __metadata("design:type", String)
+], Tgz.prototype, "year", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ name: 'month' }),
+    __metadata("design:type", String)
+], Tgz.prototype, "month", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ name: 'file' }),
+    __metadata("design:type", String)
+], Tgz.prototype, "file", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ name: 'extension' }),
+    __metadata("design:type", String)
+], Tgz.prototype, "extension", void 0);
+exports.Tgz = Tgz = __decorate([
+    (0, typeorm_1.Entity)()
+], Tgz);
+//# sourceMappingURL=tgz.entity.js.map
